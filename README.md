@@ -6,7 +6,7 @@ Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for mul
 
 ## Documentation & demo
 
-> For code sample check out the *index.html* file or go to [live demo](http://acuisinier.com/demo/jquery.dataTables.multiselect.).
+> For code sample check out the *index.html* file or go to [live demo](http://acuisinier.com/demo/jquery.dataTables.multiselect).
   
 **Minimal browser compatibility**
 
