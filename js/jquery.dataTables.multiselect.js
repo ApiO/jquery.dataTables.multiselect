@@ -112,7 +112,7 @@
         var height = dtGetCssDim("height");
 
         var items = $(dtContext.current + " tbody > tr").withinBox(left, top, width, height);
-        $.each(items, function (index, item) {
+        $.each(items, function (i, item) {
             if ($(item).hasClass("selected")) return;
             $(item).addClass("selected");
             dtUpdateRowDataSelection(item, true);
@@ -194,7 +194,7 @@
         var selections = table.data().selection.items;
 
         var rowData, found;
-        $.each($("tbody tr", this), function (index, tr) {
+        $.each($("tbody tr", this), function (i, tr) {
             rowData = table.DataTable().row(tr).data();
             found = false;
 
@@ -271,7 +271,7 @@
         if (!$(this).is("table")) {
             throw "Table element expected";
         }
-        if (bool == undefined) {
+        if (bool === "undefined") {
             throw "Parameter expected";
         }
         $(this).data().active = bool;
