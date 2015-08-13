@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+    <title>jquery.dataTables.multiselect sample</title>
+
+    <meta charset="utf-8">
+    <!-- Minimal dependencies -->
+
+    <!-- Sexify dataTables -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+    <link href="css/jquery.dataTables.multiselect.css" rel="stylesheet">
+
+    <!-- Stuff for sample -->
+    <style type="text/css">
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            margin: 16px;
+        }
+        #my_table_container {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .help {
+            color: #008C54;
+            font-size: 1.4em;
+            margin-bottom: 36px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="help">Open debug console to view selection callback result.</div>
+    <div id="my_table_container">
+        <table id="my_table"></table>
+    </div>
+
+    <script src="js/jquery.dataTables.multiselect.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(function () {
+            // initializes sample data
+            var data = [];
+            for (var i = 0; i < 100; i++) {
+                data.push({ column0: "column0-val-" + i, column1: "column1-val-" + i });
+            }
+
+            // defines dataTables settings
+            var settings = {
+                data: data,
+                columns: [
+					{ data: "column0", title: "column 0" },
+					{ data: "column1", title: "column 1" }
+                ],
+                initComplete: function () {
+                    // enables multi selection extension
+                    $("#my_table").enableExtendedSelection();
+                }
+            };
+            
+            // For demo to fit into DataTables site builder...
+            $("#my_table")
+                .removeClass("display")
+                .addClass("table table-striped table-bordered");
+            
+            $("#my_table")
+				// initializes dataTable
+				.dataTable(settings)
+				// binds callback to selection change event
+				.on("selectionChanged.dt", function (event, params) {
+				    console.info("Selection", params.data);
+				});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "jquery.dataTables.multiselect",
+  "main": "index.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ApiO/jquery.dataTables.multiselect",
+  "authors": [
+    "ApiO https://github.com/ApiO"
+  ],
+  "description": "Extension of jquery.dataTables plugin for multi-selection",
+  "moduleType": [
+    "commonjs"
+  ],
+  "keywords": [
+    "jquery",
+    "dataTable",
+    "dataTables",
+    "multi selection",
+    "multiselection",
+	"extension"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.suo",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "test",
+    "index.html"
+  ]
+}

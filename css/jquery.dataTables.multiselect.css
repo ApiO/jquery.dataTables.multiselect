@@ -1,0 +1,27 @@
+﻿/*
+ * jquery.dataTables.multiselect
+ * 2015 - Adrien Cuisinier
+ * Released under the MIT license.
+ * v1.0.0
+ */
+
+.dataTables-selector {
+    position: absolute;
+    z-index: 9999999;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.dataTable[data-multiSelectable] td:hover {
+    cursor: pointer;
+}
+
+.dataTable[data-multiSelectable] td.dataTables_noselect {
+    cursor: default !important;
+}
+
+table.dataTable[data-multiSelectable] tbody tr.selected {
+    background-color: #b0c6d9;
+    background-color: rgba(176, 198, 217, 0.35);
+}
