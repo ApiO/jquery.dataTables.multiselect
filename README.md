@@ -30,6 +30,10 @@ Safari|v4
 **Usages**
 
 ```html
+	<!-- reference both css and js files -->
+    <link href="css/jquery.dataTables.multiselect.css" rel="stylesheet">
+    <script src="js/jquery.dataTables.multiselect.js"></script>
+    
 	<!-- Add a table to your page -->
 	<table id="my_table"></table>
  ```
