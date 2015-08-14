@@ -18,6 +18,12 @@ IE|v9
 Opera|v10
 Safari|v4
 
+**Dependencies**
+
+> **jQuery v1.11.3** at least. Works perfectly on higher versions.  
+> **jquery.dataTables v1.10.7** or higher version.
+
+
 **Features**
 
 - Drag & drop onto table row to select a range of rows.
