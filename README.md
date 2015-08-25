@@ -1,6 +1,7 @@
 # jquery.dataTables.multiselect
 
-Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for multi-selection.
+Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for multi selection.
+> If you are using jquery.dataTables 1.10.8 or above, use [Select](http://datatables.net/extensions/select/) and [AreaSelect](https://github.com/ApiO/jquery.dataTables.areaselect) extensions.
 
 ![](http://acuisinier.com/images/jquery.dataTables.multiselect.png)
 
@@ -21,7 +22,7 @@ Safari|v4
 **Dependencies**
 
 > **jQuery v1.11.3** at least. Works perfectly on higher versions.  
-> **jquery.dataTables v1.10.7** or higher version.
+> **jquery.dataTables v1.10.7** or higher version *without the Select extension*.
 
 
 **Features**
