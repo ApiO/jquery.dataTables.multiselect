@@ -9,8 +9,6 @@ Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for mul
 
 > For code sample check out the *index.html* file or go to [live demo](http://acuisinier.com/demo/jquery.dataTables.multiselect).
 
-> Available on NuGet Gallery : [here](https://www.nuget.org/packages/jquery.dataTables.multiselect)
-  
 **Minimal browser compatibility**
 
 Web browser|Version 
