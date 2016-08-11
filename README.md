@@ -1,5 +1,7 @@
 # jquery.dataTables.multiselect
 
+[![NuGet](https://img.shields.io/nuget/v/jquery.dataTables.multiselect.svg)](https://www.nuget.org/packages/jquery.dataTables.multiselect) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+
 Extension of **[jquery.dataTables](https://www.datatables.net/)** plugin for multi selection.
 > If you are using jquery.dataTables 1.10.8 or above, use [Select](http://datatables.net/extensions/select/) and [AreaSelect](https://github.com/ApiO/jquery.dataTables.areaselect) extensions.
 
